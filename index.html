@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-red-200  py-3">
+        <nav class="container max-w-7xl mx-auto px-8 md:px-4 flex justify-between items-center">
+            <div class="header-left">
+                <h2 class="font-bold text-3xl">Interactive</h2>
+                <p class="text-xl text-slate-400">Geometric Genius</p>
+            </div>
+            <div class="header-right"><a
+                    class="px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 hre"
+                    href="./blog.html">Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- calculation container -->
+    <section class="area-calc-container py-16">
+        <div class="container max-w-7xl mx-auto grid grid-cols-12 gap-5">
+
+            <div class="area-calc-boxes col-span-12 lg:col-span-8 grid grid-cols-12 gap-6 md:gap-4 p-5 lg:p-2">
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/triangle.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">Triangle</h2>
+                    <p class="text-md text-slate-700">Area (A) = <span class="default-val-mult">0.5</span> * b * h</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-three-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/rectangle.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">Rectangle</h2>
+                    <p class="text-md text-slate-700">Area (A) = w * I</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="w">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="l">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-two-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/parallelogram.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">parallelogram</h2>
+                    <p class="text-md text-slate-700">Area (A) = b * h
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-two-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/rhombus.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">Rhombus</h2>
+                    <p class="text-md text-slate-700">Area (A) = d<sub>1</sub> * d<sub>2</sub> </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="d1">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="d2">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-two-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/pentagon.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">Pentagon</h2>
+                    <p class="text-md text-slate-700">Area (A) = <span class="default-val-mult">0.5</span> * p * b</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="p">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="b">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-three-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+                <div
+                    class="area-calc-box text-center shadow-lg rounded-lg p-7 col-span-12 md:col-span-6 lg:col-span-4 space-y-4">
+                    <img src="./assets/images/ellipse.png" class="h-44 w-auto mx-auto" alt="">
+                    <h2 class="font-bold text-3xl text-slate-700">Ellipse</h2>
+                    <p class="text-md text-slate-700">Area (A) = <span><span class="hidden default-val-mult">3.1416
+                            </span>&#8508</span>ab
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                        <div class="inp-one-parent">
+                            <input type="text"
+                                class="area-box-inp-one bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="a">
+                            <span>cm</span>
+                        </div>
+                        <div class="inp-two-parent">
+                            <input type="text"
+                                class="area-box-inp-two bg-slate-200 rounded-lg border-none focus:outline-orange-500 focus:outline-dashed p-2 w-3/5"
+                                placeholder="b">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <button
+                        class="area-box-btn multiple-three-val-btn px-8 py-3 font-bold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50 block w-full">Calculate</button>
+                </div>
+
+            </div>
+
+            <div class="col-span-12 lg:col-span-4">
+                <div class="area-calc-output text-center shadow-lg rounded-lg p-7 space-y-4 max-h-screen overflow-y-scroll" id="area-calc-output">
+                    <h2 class="text-center font-semibold text-xl underline">Area Calculation</h2>
+                    <!-- <div class="flex justify-between items-center gap-2">
+                        <span>1.</span>
+                        <span>Triangle</span>
+                        <span>12cm<sup>2</sup></span>
+                        <button class="px-2 py-1 font-semibold rounded-lg bg-orange-400 hover:bg-orange-500 transition text-slate-50">convert to m<sup>2</sup> </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
